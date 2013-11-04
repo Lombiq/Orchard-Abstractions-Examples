@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Net;
-using System.Web;
 using Lombiq.Abstractions.Examples.Models;
 using Lombiq.Abstractions.QuickParts;
 using Orchard.Environment.Extensions;
