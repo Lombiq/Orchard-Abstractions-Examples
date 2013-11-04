@@ -16,3 +16,8 @@ Features:
         Description: Examples for Abstractions - Quick Parts (https://orchardabstractions.codeplex.com/).
 		Category: Developer
 		Dependencies: Lombiq.Abstractions.Examples, Lombiq.Abstractions.QuickParts
+    Lombiq.Abstractions.Examples.QuickWidgets:
+		Name: Abstractions - Quick Widgets Examples
+        Description: Examples for Abstractions - Quick Widgets (https://orchardabstractions.codeplex.com/).
+		Category: Developer
+		Dependencies: Lombiq.Abstractions.Examples, Lombiq.Abstractions.QuickWidgets

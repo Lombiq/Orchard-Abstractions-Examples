@@ -87,7 +87,20 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\CurrencyConverterPart.cs" />
+    <Compile Include="Models\LikeButtonPart.cs" />
+    <Compile Include="QuickPartLogics\CurrencyConverterPartLogic.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\CurrencyConverter.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parts\LikeButton.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\EditorTemplates\Parts.CurrencyConverter.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

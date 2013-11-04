@@ -1,0 +1,15 @@
+﻿@model Lombiq.Abstractions.Examples.Models.CurrencyConverterPart
+
+<fieldset>
+    <legend>@T("Currency Converter settings")</legend>
+    <ol>
+        <li>
+            @Html.LabelFor(m => m.FromCurrencyCode, T("From currency code"))
+            @Html.TextBoxFor(m => m.FromCurrencyCode, new { @class = "text small", autocomplete = "off" })
+        </li>
+        <li>
+            @Html.LabelFor(m => m.ToCurrencyCode, T("To currency code"))
+            @Html.TextBoxFor(m => m.ToCurrencyCode, new { @class = "text small", autocomplete = "off" })
+        </li>
+    </ol>
+</fieldset>

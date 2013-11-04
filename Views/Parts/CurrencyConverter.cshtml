@@ -1,0 +1,7 @@
+﻿@{
+    var part = (Lombiq.Abstractions.Examples.Models.CurrencyConverterPart)Model.ContentPart;
+}
+
+<div class="abstractions-currency-converter">
+    @T("1 {0} equals {1} {2}", part.FromCurrencyCode, Model.ExchangeRate, part.ToCurrencyCode)
+</div>
