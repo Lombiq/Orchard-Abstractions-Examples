@@ -64,6 +64,7 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Readme.txt" />
     <Content Include="Web.config" />
     <Content Include="Views\Web.config" />
     <Content Include="Scripts\Web.config" />
@@ -100,10 +101,10 @@
     <Content Include="Views\Parts\LikeButton.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\EditorTemplates\Parts.CurrencyConverter.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts\CurrencyConverter.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\EditorTemplates\Parts.LikeButton.cshtml" />
+    <Content Include="Views\EditorTemplates\Parts\LikeButton.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
