@@ -1,0 +1,11 @@
+﻿@model Lombiq.Abstractions.Examples.Models.LikeButtonPart
+
+<fieldset>
+    <legend>@T("Like button settings")</legend>
+    <ol>
+        <li>
+            @Html.EditorFor(m => m.IsEnabled)
+            <label for="@Html.FieldIdFor(m => m.IsEnabled)" class="forcheckbox">@T("Is enabled")</label>
+        </li>
+    </ol>
+</fieldset>
