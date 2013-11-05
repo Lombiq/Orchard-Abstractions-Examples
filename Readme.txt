@@ -1,0 +1,1 @@
+﻿There are two features in the module, for demonstrating Quick Parts and Quick Widgets respectively.
