@@ -13,21 +13,17 @@ namespace Lombiq.Abstractions.Examples.QuickPartLogics
     public class CurrencyConverterPartLogic : IQuickPartLogic<CurrencyConverterPart>
     {
         // This is called when the part is displayed.
-        public IEnumerable<KeyValuePair<string, object>> ComputeDisplayParameters(CurrencyConverterPart part)
+        public void ComputeDisplayParameters(CurrencyConverterPart part, dynamic shape)
         {
-            var context = new Dictionary<string, object>();
-
-            if (string.IsNullOrEmpty(part.FromCurrencyCode) || string.IsNullOrEmpty(part.ToCurrencyCode)) return context;
+            if (string.IsNullOrEmpty(part.FromCurrencyCode) || string.IsNullOrEmpty(part.ToCurrencyCode)) return;
 
             using (var wc = new WebClient())
             {
                 var csv = wc.DownloadString("http://download.finance.yahoo.com/d/quotes.csv?s=" + part.FromCurrencyCode + part.ToCurrencyCode + "=X&f=nl1d1t1");
                 var exchangeRate = decimal.Parse(csv.Split(',')[1], System.Globalization.CultureInfo.InvariantCulture);
                 // We can add parameters to the template's scope like this. This value will be reachable from the template as Model.ExchangeRate.
-                context["ExchangeRate"] = exchangeRate;
+                shape.ExchangeRate = exchangeRate;
             }
-
-            return context;
         }
     }
 }
