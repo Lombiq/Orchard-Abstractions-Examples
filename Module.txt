@@ -1,23 +1,23 @@
 ﻿Name: Abstractions - Examples
 AntiForgery: enabled
 Author: Lombiq
-Website: https://orchardabstractions.codeplex.com/
+Website: https://github.com/Lombiq/Orchard-Abstractions
 Version: 1.0
 OrchardVersion: 1.8
-Description: Examples for Abstractions (https://orchardabstractions.codeplex.com/).
+Description: Examples for Abstractions (https://github.com/Lombiq/Orchard-Abstractions).
 Features:
     Lombiq.Abstractions.Examples:
 		Name: Abstractions - Examples
-        Description: Examples for Abstractions (https://orchardabstractions.codeplex.com/).
+        Description: Examples for Abstractions (https://github.com/Lombiq/Orchard-Abstractions).
 		Category: Developer
 		Dependencies: Lombiq.Abstractions
     Lombiq.Abstractions.Examples.QuickParts:
 		Name: Abstractions - Quick Parts Examples
-        Description: Examples for Abstractions - Quick Parts (https://orchardabstractions.codeplex.com/).
+        Description: Examples for Abstractions - Quick Parts (https://github.com/Lombiq/Orchard-Abstractions).
 		Category: Developer
 		Dependencies: Lombiq.Abstractions.Examples, Lombiq.Abstractions.QuickParts
     Lombiq.Abstractions.Examples.QuickWidgets:
 		Name: Abstractions - Quick Widgets Examples
-        Description: Examples for Abstractions - Quick Widgets (https://orchardabstractions.codeplex.com/).
+        Description: Examples for Abstractions - Quick Widgets (https://github.com/Lombiq/Orchard-Abstractions).
 		Category: Developer
 		Dependencies: Lombiq.Abstractions.Examples, Lombiq.Abstractions.QuickWidgets
